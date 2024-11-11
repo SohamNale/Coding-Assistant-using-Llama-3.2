@@ -34,7 +34,7 @@ def llama_chat(user_message, history, user_inputs):
 
     # Define the payload for the Ollama API
     payload = {
-        "model": "llama3.1",  # Specify your model name
+        "model": "llama3.2",  # Specify your model name
         "prompt": prompt,
         "stream": False,      # Disable streaming for simplicity
         "temperature": 0.7,   # Control randomness
