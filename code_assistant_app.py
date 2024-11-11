@@ -25,7 +25,7 @@ def llama_chat(user_message, history, user_inputs):
     prompt += f"User: {user_message}\nAssistant:"
 
     payload = {
-        "model": "llama3.1",
+        "model": "llama3.2",
         "prompt": prompt,
         "stream": False,
         "temperature": 0.7,
