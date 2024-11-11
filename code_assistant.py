@@ -19,7 +19,7 @@ def call_ollama_api(user_message, history):
 
     # Define the payload for the Ollama API
     data = {
-        "model": "llama3.1",  # Specify your model name
+        "model": "llama3.2",  # Specify your model name
         "prompt": context_prompt,
         "stream": False,      # Disable streaming for simplicity
         "temperature": 0.7,   # Control randomness
