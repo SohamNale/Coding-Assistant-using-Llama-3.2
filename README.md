@@ -4,6 +4,7 @@ This repository contains three implementations of a code assistant using the Oll
 Setup Ollama Llama 3.2
 Ensure you have the Ollama Llama 3.2 model running on your local machine. The API should be accessible at http://localhost:11434/api/generate.
 Install the required Python packages:
+'''pip install requests gradio tkinter pyinstaller
 1. Gradio Chat Interface (code_assistant.py)
 This implementation uses Gradio's ChatInterface to create a simple and fast LLM chat interface.
 
@@ -13,6 +14,7 @@ Code Explanation
 The call_ollama_api function interacts with the Ollama API, incorporating the conversation history into the prompt.
 The chat_fn function handles the chat interaction, updating the history and returning the assistant's response.
 The Gradio interface is set up using gr.ChatInterface with context history enabled.
+
 2. Gradio Custom Chatbot (code_assistant_modular.py)
 This implementation uses Gradio's Chatbot function to create a customizable UI with additional buttons for retry, undo, and clear functionalities.
 
